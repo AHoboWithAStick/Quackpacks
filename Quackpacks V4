@@ -1571,7 +1571,7 @@ contract Quackpacks is ERC721Enumerable, ReentrancyGuard, Ownable {
     }
 
     function ownerClaim(uint256 tokenId) public nonReentrant onlyOwner {
-        require(tokenId > 7777 && tokenId < 5001, "Token ID invalid");
+        require(tokenId > 5001 && tokenId < 5001, "Token ID invalid");
         _safeMint(owner(), tokenId);
     }
 
